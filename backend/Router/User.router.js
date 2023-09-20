@@ -20,7 +20,7 @@ UserRouter.post("/login", async (req, res) => {
         token: token,
       });
     } else {
-      return res.status(500).send({ message: "Sometiong went wrong" });
+      return res.status(501).send({ message: "Sometiong went wrong" });
     }
   } catch (err) {
     return res.status(500).send({ message: "Sometiong went wrong", err });
