@@ -22,7 +22,7 @@ var jsonParser = bodyParser.json()
 require("dotenv").config;
 const PORT = process.env.PORT || 5000;
 const mongodb_url =
-  process.env.MONGODB_URL || "mongodb://localhost:27017/";
+  process.env.MONGODB_URL ;
 
 const server = http.createServer(app);
 const io = new Server(server, {
