@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const UserModel = require("../Model/User.model");
+const {UserModel} = require("../Model/User.model");
 
 const UserRouter = Router();
 
@@ -112,4 +112,4 @@ UserRouter.post("/getuser", async (req, res) => {
     return res.status(404).send({ message: "Sometiong went wrong", err });
   }
 });
-module.exports = UserRouter;
+module.exports = {UserRouter};

@@ -13,4 +13,4 @@ const RoomSchema = Schema({
 });
 
 const Room = model('Room' , RoomSchema);
-module.exports = Room;
+module.exports = {Room}
